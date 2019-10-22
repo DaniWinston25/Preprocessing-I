@@ -134,10 +134,3 @@ html,
 body {
   height: 100%;
 }
-h1 {
-  color: lavenderblush;
-  text-size: 16px;
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}

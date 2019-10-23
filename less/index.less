@@ -136,6 +136,10 @@ table {
 }
 @maincolor: rgb(202, 149, 236);
 
+.boxed-mixin {
+  border: 2px solid @maincolor;
+  width: 28%;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -148,13 +152,11 @@ body {
 nav {
   .center();
   background-color: @maincolor;
-
   font-size: 18px;
   justify-content: space-around;
   height: 30px;
   a {
     text-decoration: none;
-    align-items: center;
   }
 }
 header {
@@ -162,23 +164,30 @@ header {
   font-size: 20px;
   flex-direction: column;
   margin-top: 2%;
+  .main-content {
+    align-items: center;
+  }
 }
+
+.contact {
+  justify-content: space-around;
+}
+
 .boxed-info {
   display: flex;
   justify-content: space-around;
+  padding: 2px;
   .box1 {
-    border: 2px solid @maincolor;
-    width: 30%;
-    justify-content: flex-start;
+    .boxed-mixin();
   } // box1
   .box2 {
-    border: 2px solid @maincolor;
-    width: 30%;
-    justify-content: center;
+    .boxed-mixin();
   } // box2
   .box3 {
-    border: 2px solid @maincolor;
-    width: 30%;
-    justify-content: center;
+    .boexd-mixin();
   } // box3
 } // .boxed-info
+
+.Contact-Info {
+  .center();
+}

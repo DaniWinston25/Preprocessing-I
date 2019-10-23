@@ -133,8 +133,47 @@ table {
 * {
   box-sizing: border-box;
 }
-
+@Maincolor: slategray;
+.background {
+  color: lightpurple;
+  width: 25%;
+  padding: 2px;
+}
+.box-sizing {
+  height: 300px;
+  width: 200px;
+}
 html,
 body {
   height: 100%;
+}
+header {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 20px;
+    color: @Maincolor;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  .background();
+  a {
+    text-decoration: none;
+    color: @Maincolor;
+  }
+}
+p {
+  background-color: gray;
+}
+img {
+  display: flex;
+  justify-content: flex-end;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  .box-sizing();
 }

@@ -205,3 +205,6 @@ nav a {
   align-items: space-between;
   height: 50%;
 }
+button {
+  font-size: inherit;
+}

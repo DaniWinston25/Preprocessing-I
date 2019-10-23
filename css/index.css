@@ -154,7 +154,10 @@ nav a {
 header {
   color: #ca95ec;
   font-size: 20px;
+  flex-direction: column;
+  margin-top: 2%;
+}
+section {
   display: flex;
   justify-content: center;
-  margin-top: 2%;
 }

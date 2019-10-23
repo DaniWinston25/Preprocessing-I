@@ -132,51 +132,34 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  line-height: 1px;
 }
-@Maincolor: slategray;
-.background {
-  color: lightpurple;
-  width: 25%;
-  padding: 2px;
+@maincolor: rgb(202, 149, 236);
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 html,
 body {
   height: 100%;
 }
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h1 {
-    font-size: 20px;
-    color: @Maincolor;
-  }
-  h2 {
-    font-size: 16px;
-    font-family: "sans sarif";
-  }
-}
 nav {
-  display: flex;
-  flex-direction: row;
-  .background();
+  .center();
+  background-color: @maincolor;
+
+  font-size: 18px;
+  justify-content: space-around;
+  height: 30px;
   a {
     text-decoration: none;
-    color: @Maincolor;
+    align-items: center;
   }
 }
-p {
-  background-color: gray;
-  font-size: 14px;
-}
-img {
-  display: flex;
-  justify-content: flex-end;
-}
-section {
-  display: flex;
-  flex-direction: row;
-  .box-sizing();
+header {
+  color: @maincolor;
+  font-size: 20px;
+  .center();
+  margin-top: 2%;
 }

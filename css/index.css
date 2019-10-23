@@ -129,55 +129,32 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  line-height: 1px;
 }
-.background {
-  color: lightpurple;
-  width: 25%;
-  padding: 2px;
-}
-.box-sizing {
-  height: 300px;
-  width: 200px;
+.center {
+  display: flex;
+  justify-content: center;
 }
 html,
 body {
   height: 100%;
 }
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header h1 {
-  font-size: 20px;
-  color: slategray;
-}
-header h2 {
-  font-size: 16px;
-  font-family: "sans sarif";
-}
 nav {
   display: flex;
-  flex-direction: row;
-  color: lightpurple;
-  width: 25%;
-  padding: 2px;
+  justify-content: center;
+  background-color: #ca95ec;
+  font-size: 18px;
+  justify-content: space-around;
+  height: 30px;
 }
 nav a {
   text-decoration: none;
-  color: slategray;
+  align-items: center;
 }
-p {
-  background-color: gray;
-  font-size: 14px;
-}
-img {
+header {
+  color: #ca95ec;
+  font-size: 20px;
   display: flex;
-  justify-content: flex-end;
-}
-section {
-  display: flex;
-  flex-direction: row;
-  height: 300px;
-  width: 200px;
+  justify-content: center;
+  margin-top: 2%;
 }

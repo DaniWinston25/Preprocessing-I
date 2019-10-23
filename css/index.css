@@ -157,7 +157,22 @@ header {
   flex-direction: column;
   margin-top: 2%;
 }
-section {
+.boxed-info {
   display: flex;
+  justify-content: space-around;
+}
+.boxed-info .box1 {
+  border: 2px solid #ca95ec;
+  width: 30%;
+  justify-content: flex-start;
+}
+.boxed-info .box2 {
+  border: 2px solid #ca95ec;
+  width: 30%;
+  justify-content: center;
+}
+.boxed-info .box3 {
+  border: 2px solid #ca95ec;
+  width: 30%;
   justify-content: center;
 }

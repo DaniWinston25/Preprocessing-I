@@ -139,6 +139,9 @@ table {
 .boxed-mixin {
   border: 2px solid @maincolor;
   width: 28%;
+  background-color: plum;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: space-between;
 }
 .center {
   display: flex;
@@ -160,13 +163,11 @@ nav {
   }
 }
 header {
-  color: @maincolor;
+  color: darkmagenta;
   font-size: 20px;
+  font-family: Arial, Bold, Helvetica, sans-serif;
   flex-direction: column;
   margin-top: 2%;
-  .main-content {
-    align-items: center;
-  }
 }
 
 .contact {
@@ -176,7 +177,7 @@ header {
 .boxed-info {
   display: flex;
   justify-content: space-around;
-  padding: 2px;
+  padding: 1px;
   .box1 {
     .boxed-mixin();
   } // box1
@@ -184,7 +185,7 @@ header {
     .boxed-mixin();
   } // box2
   .box3 {
-    .boexd-mixin();
+    .boxed-mixin();
   } // box3
 } // .boxed-info
 

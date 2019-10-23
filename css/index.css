@@ -137,7 +137,6 @@ table {
   background-color: plum;
   font-family: Arial, Helvetica, sans-serif;
   align-items: space-between;
-  padding: 1px;
   height: 50%;
 }
 .center {
@@ -158,23 +157,29 @@ nav {
 }
 nav a {
   text-decoration: none;
-  border: 2px solid black;
+  color: white;
+  align-items: center;
 }
 .main-content {
   color: darkmagenta;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-top: 2%;
 }
-.img {
-  border: 2px solid #949393;
+.main-content .img {
+  width: 260px;
+}
+.main-content .contact {
+  flex-direction: column;
 }
 .boxed-info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* box1*/
   /* box2*/
+  /* box3 */
 }
 .boxed-info .box1 {
   border: 2px solid #ca95ec;
@@ -182,7 +187,6 @@ nav a {
   background-color: plum;
   font-family: Arial, Helvetica, sans-serif;
   align-items: space-between;
-  padding: 1px;
   height: 50%;
 }
 .boxed-info .box2 {
@@ -191,7 +195,6 @@ nav a {
   background-color: plum;
   font-family: Arial, Helvetica, sans-serif;
   align-items: space-between;
-  padding: 1px;
   height: 50%;
 }
 .boxed-info .box3 {
@@ -200,6 +203,5 @@ nav a {
   background-color: plum;
   font-family: Arial, Helvetica, sans-serif;
   align-items: space-between;
-  padding: 1px;
   height: 50%;
 }
